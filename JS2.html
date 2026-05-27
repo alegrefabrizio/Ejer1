@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript2</title>
+
+    <style>
+        button{
+             background-color: aqua;
+            color: white;
+            font-size: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>javaScript</h1>
+    <p id="Texto">JavaScript es un lenguaje de programación interpretado y versátil utilizado principalmente para dotar de interactividad, dinamismo y funcionalidad a las páginas web. Mientras que HTML define la estructura y CSS la estética, JavaScript actúa como el "cerebro" que permite responder a las acciones del usuario.</p>
+    <button id="Mostrar" >Mostrar</button>
+    <button id="Ocultar">Ocultar</button>
+
+    <Script>
+        const MostrarBtn = document.getElementById("Mostrar")
+        const OcultarBtn = document.getElementById("Ocultar")
+        const Texto = document.getElementById("Texto")
+
+        MostrarBtn.addEventListener("click",function(){
+            Texto.style.display="block";
+        })
+
+        OcultarBtn.addEventListener("click",function(){
+            Texto.style.display= "none";
+        })
+
+
+    </Script>
+
+</body>
+</html>
